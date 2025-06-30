@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ukryte żądanie</title>
+</head>
+<body>
+  <iframe src="https://count.zoomov.cat/" style="display:none;"></iframe>
+  <!-- Lub -->
+  <script>
+    fetch("https://count.zoomov.cat/").catch(e => {});
+  </script>
+  <p>Wysłano żądanie w tle.</p>
+</body>
+</html>
